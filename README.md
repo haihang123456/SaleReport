@@ -1,10 +1,10 @@
 # Báo Cáo Tổng Quan Về Hiệu Suất Kinh Doanh
 
 ## 1. Tổng Quan Doanh Số
-- **Doanh số YTD (Year-To-Date Sales):** Thẻ này cung cấp thông tin về tổng doanh số bán hàng từ đầu năm đến nay. Đây là chỉ số quan trọng để đánh giá hiệu suất kinh doanh hiện tại so với các mục tiêu đã đề ra.
-- **Lợi nhuận YTD (Year-To-Date Profit):** Thẻ này hiển thị tổng lợi nhuận thu được từ đầu năm đến nay, giúp đo lường hiệu quả lợi nhuận so với cùng kỳ năm trước.
-- **Số lượng YTD (Year-To-Date Quantity):** Thẻ này cho biết tổng số lượng sản phẩm bán được từ đầu năm đến nay, cung cấp cái nhìn về khối lượng bán hàng.
-- **Tỷ suất lợi nhuận YTD (Year-To-Date Profit Margin):** Thẻ này hiển thị tỷ suất lợi nhuận từ đầu năm đến nay, phản ánh hiệu quả kinh doanh và khả năng sinh lời của công ty.
+- **Doanh số YTD (Year-To-Date Sales):** Thẻ cung cấp thông tin về tổng doanh số bán hàng từ đầu năm đến nay. Đây là chỉ số quan trọng để đánh giá hiệu suất kinh doanh hiện tại so với các mục tiêu đã đề ra.
+- **Lợi nhuận YTD (Year-To-Date Profit):** Thẻ hiển thị tổng lợi nhuận thu được từ đầu năm đến nay, giúp đo lường hiệu quả lợi nhuận so với cùng kỳ năm trước.
+- **Số lượng YTD (Year-To-Date Quantity):** Thẻ cho biết tổng số lượng sản phẩm bán được từ đầu năm đến nay, cung cấp cái nhìn về khối lượng bán hàng.
+- **Tỷ suất lợi nhuận YTD (Year-To-Date Profit Margin):** Thẻ hiển thị tỷ suất lợi nhuận từ đầu năm đến nay, phản ánh hiệu quả kinh doanh và khả năng sinh lời của công ty.
 
 ## 2. Doanh Số Theo Danh Mục
 - **Doanh số YTD, PYTD, YOY Sales và Xu hướng (Trend):** Ma trận này cung cấp thông tin chi tiết về doanh số bán hàng theo từng danh mục sản phẩm, bao gồm doanh số hiện tại, doanh số của cùng kỳ năm trước và sự thay đổi so với năm trước. Cột xu hướng giúp xác định nhanh chóng tình trạng tăng trưởng hay giảm sút của mỗi danh mục.
