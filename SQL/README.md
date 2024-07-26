@@ -1,6 +1,6 @@
 # Mô tả chung các đoạn code SQL
 
-1. **Truy vấn tất cả dữ liệu từ bảng `ecommerce_data`.**
+1. **Truy vấn tất cả dữ liệu từ bảng `data`.**
 
 2. **Tổng doanh thu và lợi nhuận theo năm.**
 
