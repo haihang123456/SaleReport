@@ -34,6 +34,7 @@
 ## Phần DAX cho Power BI
 
 ### 1. Tính YTD
+```DAX
 YTD Sales = TOTALYTD(SUM(ecommerce_data[sales_per_order]), 'Calendar'[Date])
 YTD Quantity = TOTALYTD(SUM(ecommerce_data[order_quantity]), 'Calendar'[Date])
 YTD Concate Qty = CONCATENATE("#", FORMAT([YTD Quantity]/1000, "0.0K"))
