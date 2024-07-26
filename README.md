@@ -32,14 +32,13 @@
 - **Hành Động:** Các số liệu này là cơ sở để xác định các biện pháp cải thiện, từ việc tối ưu hóa danh mục sản phẩm đến việc nâng cao chiến lược tiếp thị và bán hàng tại các khu vực khác nhau.
 
 ## Phần DAX cho Power BI
-
-### 1. Tính YTD
 ```DAX
+### 1. Tính YTD
 YTD Sales = TOTALYTD(SUM(ecommerce_data[sales_per_order]), 'Calendar'[Date])
 YTD Quantity = TOTALYTD(SUM(ecommerce_data[order_quantity]), 'Calendar'[Date])
 YTD Concate Qty = CONCATENATE("#", FORMAT([YTD Quantity]/1000, "0.0K"))
 YTD Profit Margin = TOTALYTD([Profit Margin], 'Calendar'[Date])
-YTD profit = TOTALYTD(SUM(ecommerce_data[profit_per_order]), 'Calendar'[Date])
+YTD profit = TOTALYTD(SUM(ecommerce_data[profit_per_order]), 'Calendar'[Date]) 
 
 ### 2. Tính YOY
 YOY Sales = ([YTD Sales] - [PYTD Sales]) / [PYTD Sales]
