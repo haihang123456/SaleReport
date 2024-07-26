@@ -1,6 +1,6 @@
 # Từ file csv data, tiến hành viết truy vấn SQL để đưa ra những số liệu cụ thể
 
-1. **Truy vấn tất cả dữ liệu từ bảng `data`.**
+1. **Truy vấn tất cả dữ liệu từ bảng `ecommerce_data`.**
 
 2. **Tổng doanh thu và lợi nhuận theo năm.**
 
