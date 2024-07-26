@@ -34,7 +34,6 @@
 ## Phần DAX cho Power BI
 
 ### 1. Tính YTD
-```DAX
 YTD Sales = TOTALYTD(SUM(ecommerce_data[sales_per_order]), 'Calendar'[Date])
 YTD Quantity = TOTALYTD(SUM(ecommerce_data[order_quantity]), 'Calendar'[Date])
 YTD Concate Qty = CONCATENATE("#", FORMAT([YTD Quantity]/1000, "0.0K"))
@@ -42,20 +41,17 @@ YTD Profit Margin = TOTALYTD([Profit Margin], 'Calendar'[Date])
 YTD profit = TOTALYTD(SUM(ecommerce_data[profit_per_order]), 'Calendar'[Date])
 
 ### 2. Tính YOY
-```DAX
 YOY Sales = ([YTD Sales] - [PYTD Sales]) / [PYTD Sales]
 YOY Qty = ([YTD Quantity] - [PYTD Qty]) / [PYTD Qty]
 YOY ProfitMargin = ([YTD Profit Margin] - [PYTD Profit Margin]) / [PYTD Profit Margin]
 YOY Profit = ([YTD profit] - [PYTD Profit]) / [PYTD Profit]
 
 ### 3. Tính PYTD
-```DAX
 PYTD Profit = CALCULATE(SUM(ecommerce_data[profit_per_order]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
 PYTD Profit Margin = CALCULATE([Profit Margin], DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
 PYTD Qty = CALCULATE(SUM(ecommerce_data[order_quantity]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
 PYTD Sales = CALCULATE(SUM(ecommerce_data[sales_per_order]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
 
 ### 4. DAX khác
-```DAX
 Profit Margin = SUM(ecommerce_data[profit_per_order]) / SUM(ecommerce_data[sales_per_order])
 
