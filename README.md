@@ -31,3 +31,31 @@
 - **Phân Tích:** Thông tin chi tiết theo danh mục, sản phẩm, khu vực và phương thức giao hàng giúp doanh nghiệp đưa ra các quyết định chiến lược, tối ưu hóa danh mục sản phẩm và cải thiện hiệu suất kinh doanh.
 - **Hành Động:** Các số liệu này là cơ sở để xác định các biện pháp cải thiện, từ việc tối ưu hóa danh mục sản phẩm đến việc nâng cao chiến lược tiếp thị và bán hàng tại các khu vực khác nhau.
 
+## Phần DAX cho Power BI
+
+### 1. Tính YTD
+```DAX
+YTD Sales = TOTALYTD(SUM(ecommerce_data[sales_per_order]), 'Calendar'[Date])
+YTD Quantity = TOTALYTD(SUM(ecommerce_data[order_quantity]), 'Calendar'[Date])
+YTD Concate Qty = CONCATENATE("#", FORMAT([YTD Quantity]/1000, "0.0K"))
+YTD Profit Margin = TOTALYTD([Profit Margin], 'Calendar'[Date])
+YTD profit = TOTALYTD(SUM(ecommerce_data[profit_per_order]), 'Calendar'[Date])
+
+### 2. Tính YOY
+```DAX
+YOY Sales = ([YTD Sales] - [PYTD Sales]) / [PYTD Sales]
+YOY Qty = ([YTD Quantity] - [PYTD Qty]) / [PYTD Qty]
+YOY ProfitMargin = ([YTD Profit Margin] - [PYTD Profit Margin]) / [PYTD Profit Margin]
+YOY Profit = ([YTD profit] - [PYTD Profit]) / [PYTD Profit]
+
+### 3. Tính PYTD
+```DAX
+PYTD Profit = CALCULATE(SUM(ecommerce_data[profit_per_order]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
+PYTD Profit Margin = CALCULATE([Profit Margin], DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
+PYTD Qty = CALCULATE(SUM(ecommerce_data[order_quantity]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
+PYTD Sales = CALCULATE(SUM(ecommerce_data[sales_per_order]), DATESYTD(SAMEPERIODLASTYEAR('Calendar'[Date])))
+
+### 4. DAX khác
+```DAX
+Profit Margin = SUM(ecommerce_data[profit_per_order]) / SUM(ecommerce_data[sales_per_order])
+
