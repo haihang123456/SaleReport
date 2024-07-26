@@ -1,5 +1,5 @@
 # Báo Cáo Tổng Quan Về Hiệu Suất Kinh Doanh
-![Alt text](dashboard.png)
+![Alt text](.img/SalesReport.png)
 
 ## 1. Tổng Quan Doanh Số
 - **Doanh số YTD (Year-To-Date Sales):** Thẻ cung cấp thông tin về tổng doanh số bán hàng từ đầu năm đến nay. Đây là chỉ số quan trọng để đánh giá hiệu suất kinh doanh hiện tại so với các mục tiêu đã đề ra.
