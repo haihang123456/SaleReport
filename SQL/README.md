@@ -1,4 +1,4 @@
-# Mô tả chung các đoạn code SQL
+# Từ file csv data, tiến hành viết truy vấn SQL để đưa ra những số liệu cụ thể
 
 1. **Truy vấn tất cả dữ liệu từ bảng `data`.**
 
