@@ -181,7 +181,7 @@ FROM (
 GROUP BY customer_segment
 ORDER BY c DESC;
 
--- lượng đơn hàng cho từng phân khúc khách hàng và sắp xếp theo tổng doanh thu và lợi nhuận giảm dần
+-- 19.lượng đơn hàng cho từng phân khúc khách hàng và sắp xếp theo tổng doanh thu và lợi nhuận giảm dần
 SELECT customer_segment, 
        COUNT(*) AS total_count
 FROM ecommerce_data
