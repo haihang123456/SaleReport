@@ -1,10 +1,12 @@
-# Mô tả File Sales_data.csv
+# Mô tả File Dữ liệu
 
 ## Giới thiệu
-File `Sales_data.csv` chứa thông tin chi tiết về các giao dịch bán hàng, bao gồm các thông tin liên quan đến sản phẩm, khách hàng, khu vực, và thời gian giao hàng.
+File `Sales_data.csv` chứa thông tin chi tiết về các giao dịch bán hàng, bao gồm các thông tin liên quan đến sản phẩm, khách hàng, khu vực, và thời gian giao hàng. File `long_lat.csv` chứa thông tin về tọa độ địa lý của các bang, bao gồm tên bang, vĩ độ và kinh độ.
 
 ## Cấu trúc dữ liệu
-Dữ liệu trong file CSV được tổ chức theo các cột như sau:
+
+### File `Sales_data.csv`
+Dữ liệu trong file `Sales_data.csv` được tổ chức theo các cột như sau:
 
 1. **order_id**: Mã định danh duy nhất cho mỗi đơn hàng.
 2. **order_date**: Ngày đặt hàng (định dạng YYYY-MM-DD).
@@ -23,6 +25,13 @@ Dữ liệu trong file CSV được tổ chức theo các cột như sau:
 15. **order_quantity**: Số lượng sản phẩm đặt hàng.
 16. **shipping_type**: Loại hình giao hàng (ví dụ: Standard Class, Second Class, First Class, Same Day).
 
-## File CSV `long_lat.csv`
+### File `long_lat.csv`
+Dữ liệu trong file `long_lat.csv` được tổ chức theo các cột như sau:
+
+1. **state**: Bang.
+2. **latitude**: Vĩ độ của bang.
+3. **longitude**: Kinh độ của bang.
+4. **name**: Tên của bang.
+
 
 
